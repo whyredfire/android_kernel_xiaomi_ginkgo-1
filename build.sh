@@ -23,7 +23,7 @@ make -j$(nproc --all) O=out ARCH=arm64 CC=clang LD=ld.lld AR=llvm-ar AS=llvm-as 
 fi
 
 if [ -f "out/arch/arm64/boot/Image.gz-dtb" ]; then
-git clone -q https://github.com/DarkJoker360/AnyKernel3
+git clone -q https://github.com/ghostrider-reborn/AnyKernel3
 cp out/arch/arm64/boot/Image.gz-dtb AnyKernel3
 rm -rf out/arch/arm64/boot
 cd AnyKernel3
